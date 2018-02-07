@@ -10,8 +10,6 @@
 
 ## 使用
 
-Exception
-
 ```php
 // 正常响应 - 将 $data 包裹在 ['data' => $data] 以 Json 格式相应
 $data = 'string|array|bool';
