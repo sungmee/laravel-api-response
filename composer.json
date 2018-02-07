@@ -1,0 +1,36 @@
+{
+    "name": "sungmee/laravel-api-response",
+    "description": "Laravel API 响应扩展包。",
+    "keywords": ["packages", "laravel", "api", "json"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/sungmee/laravel-api-response",
+    "time": "2018-02-07 14:36:35",
+    "authors": [
+        {
+            "name": "SUNGMEE",
+            "email": "mo@lxooo.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": ">=4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sungmee\\LaraApi\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sungmee\\LaraApi\\ServiceProvider"
+            ],
+            "aliases": {
+                "Api": "Sungmee\\LaraApi\\Facade"
+            }
+        }
+    }
+}
