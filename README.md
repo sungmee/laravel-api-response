@@ -4,7 +4,9 @@
 
 ## 安装
 
-在 Laravel 项目根目录的 composer.json 文件的 `require` 中加入 `"sungmee/laravel-api-response": "dev-master",`，然后命令行运行 `composer update`。
+命令行到 Laravel 项目根目录然后
+
+> composer require sungmee/laravel-api-response
 
 就这些了。
 
