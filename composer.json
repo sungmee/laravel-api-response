@@ -1,6 +1,7 @@
 {
     "name": "sungmee/laravel-api-response",
     "description": "Laravel API 响应扩展包。",
+    "version": "0.1.0",
     "keywords": ["packages", "laravel", "api", "json"],
     "type": "library",
     "license": "MIT",
@@ -21,7 +22,6 @@
             "Sungmee\\LaraApi\\": "src/"
         }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "laravel": {
