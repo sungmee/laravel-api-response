@@ -4,7 +4,7 @@
 
 ## 安装
 
-在 Laravel 项目根目录的 composer.json 文件的 `require` 中加入 `"Sungmee/laravel-api-response": "dev-master",`，然后命令行运行 `composer update`。
+在 Laravel 项目根目录的 composer.json 文件的 `require` 中加入 `"sungmee/laravel-api-response": "dev-master",`，然后命令行运行 `composer update`。
 
 就这些了。
 
@@ -15,7 +15,7 @@
 $data = 'string|array|bool';
 \Api::res($data);
 
-// 204 响应 - 空响应正文
+// 204 响应 - 空响应正文
 \Api::ok();
 
 // 自动根据内容相应：204，正常响应或 503 错误
