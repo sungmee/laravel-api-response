@@ -183,9 +183,7 @@ class Api
             return $data ? $this->ok() : $this->e503($error);
         }
 
-        return is_array($data) || is_string($data)
-            ? $this->res($data)
-            : $this->e503($error);
+        return empty($data) ? $this->ok() : $this->res($data);
     }
 
     /**
