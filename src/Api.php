@@ -173,6 +173,17 @@ class Api
     /**
      * 返回 204、数据或 503 错误。
      *
+     * @param  null|string|array    $data       表示完成与否的布尔值，或字符串数据，或数组数据。
+     * @return json   $response
+     */
+    public function or404($data)
+    {
+        return empty($data) ? $this->e404() : $this->res($data);
+    }
+
+    /**
+     * 返回 204、数据或 503 错误。
+     *
      * @param  bool|string|array    $data       表示完成与否的布尔值，或字符串数据，或数组数据。
      * @param  string               $error      错误消息
      * @return json   $response
