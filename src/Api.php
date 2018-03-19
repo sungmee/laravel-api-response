@@ -213,8 +213,12 @@ class Api
      *
      * @return json   $this->response
      */
-    public function ok()
+    public function ok($result = true)
     {
+        if (!!$result) {
+            return $this->e503();
+        }
+
         $this->statusCode = 204;
 
         return $this->response();
