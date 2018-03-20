@@ -215,7 +215,7 @@ class Api
      */
     public function ok($result = true)
     {
-        if (!!$result) {
+        if (!!!$result) {
             return $this->e503();
         }
 
